@@ -62,7 +62,7 @@ public class Test {
               RuntimeMXBean mxbean = ManagementFactory.getRuntimeMXBean();
 
               
-              /*System.out.println(mxbean.getName());
+              System.out.println(mxbean.getName());
               System.out.println(mxbean.getVmVendor());
               System.out.println(mxbean.getClassPath());
               System.out.println(mxbean.getLibraryPath());
@@ -73,7 +73,7 @@ public class Test {
               System.out.println(mxbean.getStartTime());
               System.out.println(mxbean.getUptime());
               System.out.println(mxbean.getVmName());
-              System.out.println("=====================");*/
+              System.out.println("=====================");
               Map map = mxbean.getSystemProperties();
               Collection cl = map.values();
               for(Iterator ite = cl.iterator();ite.hasNext();){

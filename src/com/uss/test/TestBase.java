@@ -114,7 +114,7 @@ public class TestBase {
          //strEpx();
         //helloWord();
         //strSwitch();
-        //increment();
+        increment();
          arrayReverse();
     }
     
