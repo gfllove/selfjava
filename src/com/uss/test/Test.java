@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import javax.management.AttributeNotFoundException;
 import javax.management.InstanceNotFoundException;
@@ -26,26 +27,26 @@ public class Test {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		/*Set<Integer> set = new TreeSet<Integer>();
+		Set<Integer> set = new TreeSet<Integer>();
 		for(int i=0;i<20;i++){
 			set.add(i);
 		}
 		for(Iterator<Integer> ite =set.iterator();ite.hasNext();){
 			System.out.println(ite.next());
-		}*/
+		}
 		
-		//int[] num = {1,2,6,7,3,0,9,4};
-		/*for(int i:num){
-			System.out.println(i);
-		}*/
-		/*Arrays.sort(num);
+		int[] num = {1,2,6,7,3,0,9,4};
 		for(int i:num){
 			System.out.println(i);
-		}*/
+		}
+		Arrays.sort(num);
+		for(int i:num){
+			System.out.println(i);
+		}
 		
 		//System.out.println(Arrays.binarySearch(num, 2));
         
-        /*Map map = new HashMap();
+        Map map = new HashMap();
         map.put("A", "1");
         
         System.out.println(map.get("A"));
@@ -55,7 +56,7 @@ public class Test {
         a.add("2");
         a.add("3");
         
-        System.out.println(a.get(0));*/
+        System.out.println(a.get(0));
         
    
             
@@ -74,8 +75,8 @@ public class Test {
               System.out.println(mxbean.getUptime());
               System.out.println(mxbean.getVmName());
               System.out.println("=====================");
-              Map map = mxbean.getSystemProperties();
-              Collection cl = map.values();
+              Map map2 = mxbean.getSystemProperties();
+              Collection cl = map2.values();
               for(Iterator ite = cl.iterator();ite.hasNext();){
                   System.out.println(ite.next());
                   
